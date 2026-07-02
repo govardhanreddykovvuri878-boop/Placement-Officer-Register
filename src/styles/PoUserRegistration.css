@@ -11,19 +11,27 @@ body{
   background:#f4f5fb;
 }
 
+html, body{
+  height:100%;
+  overflow:hidden;
+}
+
 .ur-main-wrapper{
   width:100%;
-  min-height:100vh;
+  height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:24px;
+  padding:14px;
   background:#f4f5fb;
+  overflow:hidden;
 }
 
 .ur-registration-container{
   width:1240px;
   max-width:96%;
+  height:100%;
+  max-height:100%;
   background:#fff;
   border-radius:18px;
   display:flex;
@@ -35,20 +43,21 @@ body{
 
 .ur-left-panel{
   flex:0 0 33%;
-  padding:30px 26px;
+  padding:16px 20px;
   display:flex;
   flex-direction:column;
+  overflow:hidden;
 }
 
 .ur-logo-section{
   display:flex;
   align-items:center;
-  gap:14px;
-  margin-bottom:28px;
+  gap:10px;
+  margin-bottom:12px;
 }
 
 .ur-logo-image{
-  width:56px;
+  width:38px;
 }
 
 .ur-logo-content{
@@ -57,41 +66,44 @@ body{
 }
 
 .ur-logo-text{
-  width:128px;
+  width:100px;
 }
 
 .ur-logo-moto{
-  width:190px;
-  margin-top:3px;
+  width:150px;
+  margin-top:2px;
 }
 
 .ur-content-section{
   flex:1;
+  min-height:0;
+  display:flex;
+  flex-direction:column;
 }
 
 .ur-main-title{
-  font-size:38px;
+  font-size:24px;
   font-weight:700;
   color:#1e1b39;
-  line-height:44px;
+  line-height:28px;
   white-space:nowrap;
-  margin-bottom:10px;
+  margin-bottom:6px;
 }
 
 .ur-main-description{
-  font-size:15px;
-  line-height:24px;
+  font-size:12.5px;
+  line-height:18px;
   color:#6b7280;
-  margin-bottom:22px;
+  margin-bottom:12px;
 }
 
 .ur-role-heading{
   text-align:center;
-  font-size:13px;
+  font-size:11px;
   font-weight:600;
-  letter-spacing:3px;
+  letter-spacing:2px;
   color:#7b7b7b;
-  margin-bottom:18px;
+  margin-bottom:10px;
 }
 
 /* ================= ROLE CARDS ================= */
@@ -100,10 +112,10 @@ body{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:14px 16px;
-  margin-bottom:10px;
+  padding:8px 12px;
+  margin-bottom:6px;
   border:1px solid #ececec;
-  border-radius:12px;
+  border-radius:10px;
   cursor:pointer;
   transition:.3s ease;
 }
@@ -125,8 +137,8 @@ body{
 }
 
 .ur-role-icon{
-  width:36px;
-  height:36px;
+  width:26px;
+  height:26px;
   flex-shrink:0;
 }
 
@@ -135,15 +147,15 @@ body{
 }
 
 .ur-role-title{
-  font-size:16px;
+  font-size:13px;
   font-weight:600;
   color:#202020;
-  margin-bottom:4px;
+  margin-bottom:2px;
 }
 
 .ur-role-description{
-  font-size:12px;
-  line-height:18px;
+  font-size:10.5px;
+  line-height:14px;
   color:#666;
 }
 
@@ -155,8 +167,8 @@ body{
 /* ================= RADIO ================= */
 
 .ur-role-radio{
-  width:22px;
-  height:22px;
+  width:18px;
+  height:18px;
   border:2px solid #fff;
   border-radius:50%;
   display:flex;
@@ -166,53 +178,54 @@ body{
 }
 
 .ur-role-radio-inner{
-  width:10px;
-  height:10px;
+  width:8px;
+  height:8px;
   background:#fff;
   border-radius:50%;
 }
 
 .ur-role-radio-image{
-  width:22px;
+  width:18px;
 }
 
 .ur-footer-text{
-  margin-top:auto;
+  margin-top:8px;
   text-align:center;
-  font-size:13px;
+  font-size:11px;
   color:#8a8a8a;
 }
 /* ================= RIGHT PANEL ================= */
 
 .ur-right-panel{
   flex:1;
-  padding:26px 30px;
+  padding:16px 26px;
   background:#fff;
   display:flex;
   flex-direction:column;
+  overflow:hidden;
 }
 
 .ur-form-header{
   display:flex;
   align-items:center;
-  gap:14px;
-  margin-bottom:20px;
+  gap:10px;
+  margin-bottom:10px;
 }
 
 .ur-form-user-icon{
-  width:48px;
-  height:48px;
+  width:34px;
+  height:34px;
 }
 
 .ur-form-title{
-  font-size:30px;
+  font-size:19px;
   font-weight:700;
   color:#1e1b39;
-  margin-bottom:4px;
+  margin-bottom:2px;
 }
 
 .ur-form-subtitle{
-  font-size:14px;
+  font-size:12px;
   color:#6b7280;
 }
 
@@ -229,36 +242,41 @@ body{
 }
 
 .ur-form-bottom{
-  margin-top:10px;
+  margin-top:6px;
 }
 
 .ur-form-row{
   display:flex;
-  gap:16px;
-  margin-bottom:14px;
+  gap:14px;
+  margin-bottom:8px;
+}
+
+.ur-form-row .ur-form-group{
+  margin-bottom:0;
 }
 
 .ur-form-group{
   flex:1;
   display:flex;
   flex-direction:column;
+  margin-bottom:8px;
 }
 
 .ur-form-group label{
-  font-size:13px;
+  font-size:12px;
   font-weight:600;
   color:#374151;
-  margin-bottom:5px;
+  margin-bottom:4px;
 }
 
 .ur-form-group input,
 .ur-select-field{
   width:100%;
-  height:44px;
+  height:34px;
   border:1px solid #d9d9d9;
-  border-radius:8px;
-  padding:0 14px;
-  font-size:14px;
+  border-radius:7px;
+  padding:0 12px;
+  font-size:13px;
   color:#1f2937;
   background:#fff;
   outline:none;
@@ -293,23 +311,23 @@ body{
 
 .ur-input-left-icon{
   position:absolute;
-  left:14px;
+  left:12px;
   top:50%;
   transform:translateY(-50%);
-  width:18px;
+  width:15px;
 }
 
 .ur-input-with-icon input{
-  padding-left:44px;
+  padding-left:38px;
 }
 
 .ur-dropdown-icon,
 .ur-eye-icon{
   position:absolute;
-  right:14px;
+  right:12px;
   top:50%;
   transform:translateY(-50%);
-  width:18px;
+  width:15px;
   cursor:pointer;
 }
 
@@ -318,20 +336,20 @@ body{
 .ur-checkbox-section{
   display:flex;
   align-items:flex-start;
-  gap:10px;
-  margin:14px 0;
+  gap:8px;
+  margin:6px 0;
 }
 
 .ur-checkbox-input{
-  width:18px;
-  height:18px;
+  width:15px;
+  height:15px;
   accent-color:#7c3aed;
-  margin-top:2px;
+  margin-top:1px;
 }
 
 .ur-checkbox-text{
-  font-size:14px;
-  line-height:18px;
+  font-size:12px;
+  line-height:16px;
   color:#6b7280;
 }
 
@@ -344,17 +362,17 @@ body{
 
 .ur-register-button{
   width:100%;
-  height:48px;
+  height:38px;
   border:none;
   border-radius:8px;
   background:linear-gradient(90deg,#b567ff,#7c3aed);
   color:#fff;
-  font-size:15px;
+  font-size:13px;
   font-weight:600;
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:10px;
+  gap:8px;
   cursor:pointer;
   transition:.3s;
 }
@@ -365,15 +383,15 @@ body{
 }
 
 .ur-button-arrow{
-  width:18px;
+  width:15px;
 }
 
 /* ================= LOGIN ================= */
 
 .ur-login-text{
-  margin-top:14px;
+  margin-top:8px;
   text-align:center;
-  font-size:14px;
+  font-size:12px;
   color:#6b7280;
 }
 
@@ -398,27 +416,27 @@ body{
 
 .ur-error-text{
   display:block;
-  margin-top:5px;
-  font-size:12px;
-  line-height:16px;
+  margin-top:2px;
+  font-size:10.5px;
+  line-height:13px;
   color:#e0322c;
 }
 
 .ur-form-error-summary{
-  margin-top:10px;
+  margin-top:6px;
   text-align:center;
-  font-size:13px;
+  font-size:11px;
   color:#e0322c;
 }
 
 .ur-success-banner{
-  margin-bottom:18px;
-  padding:12px 16px;
-  border-radius:8px;
+  margin-bottom:8px;
+  padding:6px 12px;
+  border-radius:6px;
   background:#f0fdf4;
   border:1px solid #86e0a6;
   color:#1e7a37;
-  font-size:13px;
+  font-size:11px;
   font-weight:600;
   text-align:center;
 }
